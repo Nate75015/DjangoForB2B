@@ -1,0 +1,9 @@
+h1 a, h2 a {
+    color: #C25100;
+}
+
+
+div {
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle }

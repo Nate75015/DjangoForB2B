@@ -1,0 +1,29 @@
+{% load static %}
+<link href="../static/Login_v19/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="../static/Login_v19/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../static/Login_v19/vendor/jqueryjquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+<center>
+    <!-- Login Form -->
+    <form action="/login/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+</center>
+
+  </div>
+</div>
